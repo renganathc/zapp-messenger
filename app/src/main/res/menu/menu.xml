@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/new_message"
+        android:title="New Message"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/signOut"
+        android:icon="@drawable/ic_baseline_follow_the_signs_24"
+        android:title="Sign Out"/>
+
+    <item android:id="@+id/acnt"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Account Info"/>
+
+    <item android:id="@+id/change_of_username"
+        android:icon="@drawable/ic_baseline_short_text_24"
+        android:title="Change Username"/>
+
+    <item android:id="@+id/change_of_photo"
+        android:icon="@drawable/ic_baseline_short_text_24"
+        android:title="Change Profile Photo"/>
+
+    <item android:id="@+id/change_of_status"
+        android:icon="@drawable/ic_baseline_short_text_24"
+        android:title="Update Status"/>
+
+    <item android:id="@+id/resep"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Reset Password"/>
+
+    <item android:id="@+id/web"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Our Website"/>
+
+    <item android:id="@+id/abtus"
+        android:icon="@drawable/ic_baseline_supervisor_account_24"
+        android:title="About Us"/>
+
+</menu>

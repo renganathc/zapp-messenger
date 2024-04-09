@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePhotoActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="140dp"
+        app:civ_border_color="#FF039BE5"
+        app:civ_border_width="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_button"
+        app:layout_constraintHorizontal_bias="@+id/image_button"
+        app:layout_constraintStart_toStartOf="@+id/image_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/image_button"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="103dp"
+        android:background="@drawable/image_button"
+        android:text="Choose\nProfile\nImage"
+        android:textColor="#64B5F6"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="141dp"
+        android:layout_marginBottom="202dp"
+        android:text="Change Profile Photo"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:padding="20dp"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

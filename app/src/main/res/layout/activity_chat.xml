@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFA726"
+    tools:context=".ChatActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="13050dp"
+        android:layout_height="13000dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bl" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sendbutton"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="39dp"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <!--<Button
+        android:id="@+id/sendbutton"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/text_new"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Send"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <EditText
+        android:id="@+id/messagebox"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:width="285dp"
+        android:background="@drawable/textbox"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Type a message"
+        android:inputType="textPersonName"
+        android:paddingStart="40dp"
+        android:paddingEnd="10dp"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sendbutton"
+        app:layout_constraintEnd_toStartOf="@+id/sendbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sendbutton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclert"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/messagebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/pic"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/messagebox"
+        app:layout_constraintStart_toStartOf="@+id/messagebox"
+        app:layout_constraintTop_toTopOf="@+id/messagebox"
+        app:srcCompat="@drawable/ic_baseline_attachment_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

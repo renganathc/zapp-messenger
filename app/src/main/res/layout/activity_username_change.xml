@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsernameChange">
+
+    <TextView
+        android:id="@+id/currentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Current Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="New Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currentuname"
+        app:layout_constraintStart_toStartOf="@+id/currentuname"
+        app:layout_constraintTop_toBottomOf="@+id/currentuname" />
+
+    <TextView
+        android:id="@+id/currentuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Processing....."
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/currentname"
+        app:layout_constraintStart_toStartOf="@+id/currentname"
+        app:layout_constraintTop_toBottomOf="@+id/currentname" />
+
+    <EditText
+        android:id="@+id/newuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="New Username"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/newname"
+        app:layout_constraintStart_toStartOf="@+id/newname"
+        app:layout_constraintTop_toBottomOf="@+id/newname" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Save Username"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/newuname"
+        app:layout_constraintStart_toStartOf="@+id/newuname"
+        app:layout_constraintTop_toBottomOf="@+id/newuname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
